@@ -1,0 +1,18 @@
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+      <li class="breadcrumb-item"><a href="/admin/{{link}}">{{parent}}</a></li>
+      <li class="breadcrumb-item">{{_id}}</li>
+    </ol>
+    <form method="POST">
+      <table>
+        {{#item}}
+        <tr>
+          <td>{{key}}</td>
+          <td>
+            <input type="{{type}}" value="{{value}}" name="{{key}}">
+          </td>
+        </tr>
+        {{/item}}
+      </table>
+      <button type="submit" class="btn btn-primary">Save</button>
+    </form>

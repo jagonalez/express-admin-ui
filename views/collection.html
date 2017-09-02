@@ -1,0 +1,37 @@
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/admin">Home</a></li>
+      <li class="breadcrumb-item">{{name}}</li>
+    </ol>
+    <form method="post">
+      <button type="button" class="btn btn-primary">Add New {{name}}</button>
+      <button type="submit" class="btn btn-primary">Delete Selected {{name}}</button>
+      <div><span id="item-count">0</span> of {{count}} selected</div>
+      <table>
+        <thead>
+          <tr>
+            <th>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" value="">
+                  {{name}}
+                </label>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#list}}
+          <tr>
+            <td>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="item" value="{{_id}}">
+                  <a href="{{href}}/{{_id}}/change">{{_id}}</a>
+                </label>
+              </div>
+            </td>
+          </tr>
+          {{/list}}
+        </tbody>
+      </table>
+    </form>
