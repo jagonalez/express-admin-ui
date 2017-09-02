@@ -4,7 +4,7 @@
   "description": "admin ui for express",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "mocha test/*.spec.js"
   },
   "author": "Jeremy Gonzalez",
   "license": "ISC",
@@ -12,5 +12,9 @@
     "express": "^4.15.4",
     "hogan.js": "^3.0.2",
     "mongodb": "^2.2.31"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^3.5.0"
   }
 }
