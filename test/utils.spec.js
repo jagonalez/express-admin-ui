@@ -9,10 +9,10 @@ describe('Utils module', () => {
       expect(utils).to.be.an('object')
     })
     it('should have a db property', () => {
-      expect(utils.db).to.be.null
+      expect(utils.db).to.not.be.undefined
     })
     it('should have a collection property', () => {
-      expect(utils.collection).to.be.empty
+      expect(utils.collection).to.not.be.undefined
     })
     describe('setDB', () => {
       it ('should set the db context', () => {
