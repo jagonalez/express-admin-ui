@@ -1,0 +1,16 @@
+{
+  "name": "express-admin-ui",
+  "version": "0.0.1",
+  "description": "admin ui for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "author": "Jeremy Gonzalez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "hogan.js": "^3.0.2",
+    "mongodb": "^2.2.31"
+  }
+}
