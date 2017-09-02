@@ -10,7 +10,8 @@ module.exports = function(db) {
     utils.setCollection(list);
   })
   router.use('/static', express.static(path.join(__dirname, 'static')))
-  router.use('/', require('./lib/collections')(db))
-  router.use('/:collection', require('./lib/collection')(db))
+  router.use('/', require('./lib/collections')())
+  router.use('/:collection', require('./lib/collection')())
+  router.use('/:collection/:id/change', require('./lib/document')())
   return router
 }
